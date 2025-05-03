@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game By Avik Mahato</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<body>
+    <h1 class="container bg-danger text-white text-center mt-2 p-2 rounded fw-bolder">Guesing Game</h1>
+    <form class="container bg-primary p-3 rounded shadow mb-3">
+        <label for="number" class="form-label fw-bold text-white">Guess A Number </label>
+        <input type="number" class="form-control mb-3" id="number" min="1" max="100">
+        <button class="btn btn-outline-light fw-semibold px-4 d-flex mx-auto" id="btn" type="button" id="btn">Enter</button>
+    </form>
+    <div class="container p-2 rounded shadow mb-3">
+        <p class="fs-4 fw-bold my-auto" id="Res">
+            Hint :
+        </p>
+    </div>
+    <div class="container" style="width: 300px;">
+        <img src="images/near.png" alt="" id="image" class="img-thumbnail">
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="module">
+        import Swal from 'sweetalert2';
+    </script>
+</body>
+
+</html>
